@@ -254,9 +254,38 @@ body {
   margin-bottom: 60px;
 }
 
+.video-profile-flex {
+  display: flex;
+  gap: 24px; /* 動画と画像の間の隙間 */
+  align-items: stretch; /* 子要素（動画と画像）の高さを揃える */
+  justify-content: center; /* コンテンツ全体を中央揃えにする */
+}
+
+.profile-image-wrapper {
+  flex: 1;
+  max-width: 340px;
+  aspect-ratio: 9 / 16; /* 動画プレイヤーと同じ比率に固定 */
+}
+
+.profile-image-wrapper a {
+  display: block;
+  height: 100%;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 枠に合わせて画像を切り抜き、歪みを防ぐ */
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border-light);
+}
+
 .video-player-wrapper {
-  max-width: 340px; /* PCでの肥大化防止 */
-  margin: 0 auto;
+  flex: 1;
+  max-width: 340px;
+  margin: 0; /* 中央寄せを解除 */
   width: 100%;
   aspect-ratio: 9 / 16; /* ショート動画の縦長黄金比率 */
   position: relative;
@@ -467,9 +496,19 @@ body {
     font-size: 14px;
   }
   /* スマホ時は動画プレイヤーが横幅いっぱいに自然に広がるよう、最大制限を解除 */
+  .video-profile-flex {
+    flex-direction: column; /* 縦並びに変更 */
+    align-items: center;
+  }
   .video-player-wrapper {
     max-width: 100%;
     padding-bottom: 0;
+  }
+  .profile-image-wrapper {
+    aspect-ratio: auto; /* スマホの縦並びでは比率固定を解除 */
+  }
+  .profile-img {
+    height: auto; /* スマホでは画像全体の比率を優先 */
   }
 }
 
