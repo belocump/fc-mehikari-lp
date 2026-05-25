@@ -578,3 +578,13 @@ body {
   color: #00a896 !important; /* FCメヒカリのエメラルドグリーンに変化 */
   padding-left: 4px; /* 右側に少しだけスッと動く、プロっぽい演出 */
 }
+
+/* style.css の一番下に追記してください */
+.google-calendar-card {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* 他のカードと統一した美しいシャドウ */
+  margin-bottom: 30px;
+  overflow: hidden;
+}
