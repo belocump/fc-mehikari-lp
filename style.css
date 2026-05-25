@@ -385,6 +385,7 @@ body {
 .sns-button-list {
   display: block;
   max-width: 450px;
+  margin: 0 auto; /* ➔ 左右の余白を自動調整して、中身を「中央揃え」にする魔法のコード */
 }
 
 .sns-row-btn {
@@ -439,7 +440,8 @@ body {
   margin-top: 40px;
   font-size: 13px;
   opacity: 0.8;
-  text-align: left;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* --------------------------------------------------------------------------
@@ -466,4 +468,15 @@ body {
     max-width: 100%;
     padding-bottom: 0;
   }
+}
+
+/* style.css の一番下に追記してください */
+.btn-litlink {
+  background-color: #ffffff; /* lit.linkのシンボルである洗練されたホワイトベース */
+  color: #00a896 !important; /* 文字色はエメラルドグリーンにして一体感を演出 */
+  border: 2px solid #ffffff;
+}
+.btn-litlink:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #028090 !important;
 }
