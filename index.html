@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      FC Mehikari | ウォーキングフットボールでまぜこぜ共生社会を作る
+    </title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="left-content">
+        <div class="brand-header">
+          <div class="brand-logo-area">
+            <h1>FC Mehikari</h1>
+          </div>
+        </div>
+
+        <div class="hero-section">
+          <h2>ウォーキングフットボールで<br />まぜこぜ共生社会を作る</h2>
+          <p>
+            走らない、相手に触らない。<br />子どもから高齢者まで、みんなが主役の「歩くサッカー」
+          </p>
+          <a href="#events" class="btn-orange-cta">イベントに参加してみる！</a>
+        </div>
+
+        <div class="about-block">
+          <h3 class="sub-heading">FCメヒカリについて</h3>
+          <div class="about-text-block">
+            <p>
+              FCメヒカリは、福島県いわき市を拠点に活動するウォーキングフットボールクラブです。年齢、性別、能力、経験の異なる人々が「まぜこぜ」で集まり、互いの違いを認め合える優しい居場所づくりを目指しています。
+            </p>
+          </div>
+        </div>
+
+        <div class="carousel-section">
+          <button class="carousel-arrow arrow-left" onclick="moveSlide(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-arrow arrow-right" onclick="moveSlide(1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="carousel-viewport">
+            <div class="carousel-container" id="carouselContainer">
+              <div class="carousel-slide">
+                <img src="img/photo1.jpg" alt="FCメヒカリ活動写真1" />
+              </div>
+              <div class="carousel-slide">
+                <img src="img/photo2.jpg" alt="FCメヒカリ活動写真2" />
+              </div>
+              <div class="carousel-slide">
+                <img src="img/photo3.jpg" alt="FCメヒカリ活動写真3" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <div class="dot active" onclick="setSlide(0)"></div>
+            <div class="dot" onclick="setSlide(1)"></div>
+            <div class="dot" onclick="setSlide(2)"></div>
+          </div>
+        </div>
+
+        <div class="video-section">
+          <h3 class="sub-heading">実際のプレイ動画</h3>
+          <div class="video-player-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/N2f1GFqPeIk"
+              title="FCメヒカリ ウォーキングフットボールショート動画"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="rule-container">
+          <h3 class="sub-heading">はじめての安心ルール</h3>
+
+          <div class="rule-card">
+            <div class="rule-card-title">
+              <i class="fas fa-walking"></i> ① 走らない（歩く）
+            </div>
+            <p>
+              常に片方の足が地面に接地している必要があります。早歩きやジョギング、ステップも反則の対象となるため、体力に自信がない方でも対等にプレーできます。
+            </p>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-card-title">
+              <i class="fas fa-hand-paper"></i> ② 接触禁止（触らない）
+            </div>
+            <p>
+              相手へのチャージや、体への接触は一切禁止です。ボールを無理に奪いに行く行為もないため、ケガのリスクが極めて低く安全です。
+            </p>
+          </div>
+
+          <div class="rule-card">
+            <div class="rule-card-title">
+              <i class="fas fa-door-open"></i> ③ 高さはゴールの高さまで
+            </div>
+            <p>
+              パスやシュートの高さはゴールの高さ（1.2m）まで。ヘディングも禁止されているため、安全にグラウンダーの優しいパスワークを楽しめます。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-content" id="events">
+        <div class="schedule-section">
+          <h3 class="right-section-title">イベントスケジュール</h3>
+
+          <div class="timetree-card">
+            <iframe
+              title="Calendar"
+              src="https://timetreeapp.com/public_calendars/fc_mehikari/embed/monthly?calendar_name=true&frame_color=%232ecc87"
+              style="min-height: 700px; aspect-ratio: 680/720"
+            ></iframe>
+          </div>
+
+          <div class="timetree-link-wrapper">
+            <a
+              href="https://timetreeapp.com/public_calendars/fc_mehikari"
+              target="_blank"
+              class="btn-timetree-app"
+            >
+              <i class="far fa-calendar-alt"></i> TimeTreeで見る
+            </a>
+          </div>
+        </div>
+
+        <div class="sns-section">
+          <h3 class="sns-heading">Official SNS</h3>
+
+          <div class="sns-button-list">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="sns-row-btn btn-insta"
+            >
+              <i class="fab fa-instagram"></i> Instagram を見る
+            </a>
+
+            <a
+              href="https://line.me/ja/"
+              target="_blank"
+              class="sns-row-btn btn-line"
+            >
+              <i class="fab fa-line"></i> LINE公式アカウント
+            </a>
+
+            <a
+              href="https://note.com/"
+              target="_blank"
+              class="sns-row-btn btn-note"
+            >
+              <i class="fas fa-edit"></i> note (活動ブログ)
+            </a>
+          </div>
+        </div>
+
+        <div class="simple-footer">
+          <p>&copy; 2026 FC Mehikari. All Rights Reserved. | 代表 相原大成</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,469 @@
+/* ==========================================================================
+   FC Mehikari LP - メインスタイルシート (style.css)
+   ========================================================================== */
+
+/* 変数定義（カラーシステム） */
+:root {
+  --bg-main: #00a896; /* Figma右側背景：鮮やかなエメラルドグリーン */
+  --bg-left: #ffffff; /* Figma左側背景：ホワイト */
+  --text-dark: #222222; /* メイン文字色 */
+  --text-muted: #555555; /* 補足文字色 */
+  --accent-orange: #ff9f1c; /* ボタン用のオレンジ */
+  --border-light: rgba(0, 0, 0, 0.08);
+}
+
+/* 全体リセット・共通設定 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Helvetica Neue", Arial, "Consolas", "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--bg-left);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 2画面分割レイアウト構造（PC環境用ベース） */
+.page-wrapper {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .page-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .left-content {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    background-color: var(--bg-left);
+    padding: 40px 50px 80px 50px;
+  }
+  .right-content {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    background-color: var(--bg-main);
+    color: #ffffff;
+    padding: 60px 50px 80px 50px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* スマホ・タブレット環境用の調整 */
+@media (max-width: 991px) {
+  .left-content {
+    padding: 30px 20px 60px 20px;
+    background-color: var(--bg-left);
+  }
+  .right-content {
+    padding: 60px 20px 80px 20px;
+    background-color: var(--bg-main);
+    color: #ffffff;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   左側コンテンツ用スタイル（メッセージ、紹介、ルール）
+   -------------------------------------------------------------------------- */
+
+/* ブランドヘッダー */
+.brand-header {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.brand-logo-area {
+  display: block;
+  text-align: left;
+}
+
+.brand-logo-area h1 {
+  font-size: 26px;
+  color: var(--bg-main);
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* メインキャッチコピー */
+.hero-section {
+  margin-bottom: 60px;
+}
+
+.hero-section h2 {
+  font-size: 38px;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.hero-section p {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* オレンジ色のCTAボタン */
+.btn-orange-cta {
+  display: inline-block;
+  background-color: var(--accent-orange);
+  color: #ffffff;
+  padding: 14px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(255, 159, 28, 0.3);
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+  text-align: center;
+}
+
+.btn-orange-cta:hover {
+  transform: translateY(-2px);
+  background-color: #ffb03a;
+}
+
+/* セクション小見出し */
+.sub-heading {
+  font-size: 24px;
+  color: var(--text-dark);
+  margin-bottom: 25px;
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 4px solid var(--bg-main);
+  padding-bottom: 5px;
+}
+
+.about-text-block {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* 写真カルーセル（スライドショー） */
+.carousel-section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.carousel-viewport {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--border-light);
+}
+
+.carousel-container {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  width: 33.3333%;
+  height: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* カルーセルの矢印 */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--text-dark);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  z-index: 5;
+}
+
+.carousel-arrow:hover {
+  background-color: var(--bg-main);
+  color: #ffffff;
+}
+
+.arrow-left {
+  left: 15px;
+}
+.arrow-right {
+  right: 15px;
+}
+
+/* カルーセルのインジケーター（ドット） */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #cccccc;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dot.active {
+  background-color: var(--bg-main);
+  width: 24px;
+  border-radius: 5px;
+}
+
+/* YouTubeショート動画埋め込みプレイヤー枠 */
+.video-section {
+  margin-bottom: 60px;
+}
+
+.video-player-wrapper {
+  max-width: 340px; /* PCでの肥大化防止 */
+  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 9 / 16; /* ショート動画の縦長黄金比率 */
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--border-light);
+}
+
+.video-player-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 安心ルールのカード表現 */
+.rule-container {
+  margin-bottom: 40px;
+}
+
+.rule-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-light);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.rule-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--bg-main);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rule-card-title i {
+  font-size: 20px;
+}
+
+.rule-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   右側コンテンツ用スタイル（TimeTreeカレンダー、SNS連携）
+   -------------------------------------------------------------------------- */
+
+/* セクションタイトル */
+.right-section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 6px;
+}
+
+/* TimeTreeカレンダーカード */
+.timetree-card {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.timetree-card iframe {
+  width: 100%;
+  border: none;
+  display: block;
+}
+
+.timetree-link-wrapper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* TimeTreeアプリボタン（白丸ボタン） */
+.btn-timetree-app {
+  display: inline-block;
+  background-color: #ffffff;
+  color: var(--bg-main);
+  padding: 12px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.btn-timetree-app:hover {
+  transform: translateY(-2px);
+  background-color: #f5f5f5;
+}
+
+.btn-timetree-app i {
+  margin-right: 6px;
+}
+
+/* SNS見出し */
+.sns-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 25px;
+  display: inline-block;
+  border-bottom: 4px solid #ffffff;
+  padding-bottom: 6px;
+}
+
+/* SNSボタンリスト */
+.sns-button-list {
+  display: block;
+  max-width: 450px;
+}
+
+.sns-row-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.2s,
+    opacity 0.2s;
+  width: 100%;
+  text-align: center;
+}
+
+.sns-row-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.sns-row-btn i {
+  font-size: 22px;
+}
+
+/* 各SNSのブランドカラー割り当て */
+.btn-insta {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+.btn-line {
+  background-color: #06c755;
+}
+.btn-note {
+  background-color: #232323;
+}
+
+/* 簡易フッター */
+.simple-footer {
+  margin-top: 40px;
+  font-size: 13px;
+  opacity: 0.8;
+  text-align: left;
+}
+
+/* --------------------------------------------------------------------------
+   スマートフォン（縦長画面）用レスポンシブ微調整
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .hero-section h2 {
+    font-size: 28px;
+  }
+  .right-section-title,
+  .sns-heading {
+    font-size: 24px;
+  }
+  .sns-button-list {
+    max-width: 100%;
+  }
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  /* スマホ時は動画プレイヤーが横幅いっぱいに自然に広がるよう、最大制限を解除 */
+  .video-player-wrapper {
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+}
