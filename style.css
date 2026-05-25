@@ -505,6 +505,8 @@ body {
     padding-bottom: 0;
   }
   .profile-image-wrapper {
+    width: 100%;
+    max-width: 100%;
     aspect-ratio: auto; /* スマホの縦並びでは比率固定を解除 */
   }
   .profile-img {
