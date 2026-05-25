@@ -448,8 +448,11 @@ body {
    スマートフォン（縦長画面）用レスポンシブ微調整
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
+  /* ➔ タイトルの文字サイズを 28px から 「22px」 に小さくし、文字の間隔も少し詰めました */
   .hero-section h2 {
-    font-size: 28px;
+    font-size: 22px !important;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
   }
   .right-section-title,
   .sns-heading {
@@ -479,4 +482,58 @@ body {
 .btn-litlink:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: #028090 !important;
+}
+
+/* ==========================================================================
+   RSS 2 HTML(bloople) 専用の着せ替えデザイン（style.css の最下部に上書き）
+   ========================================================================== */
+
+.note-rss-section {
+  margin-bottom: 60px;
+  text-align: center; /* タイトルを中央揃えに */
+}
+
+/* 白い角丸カードの土台 */
+.rss-card {
+  background-color: #ebbebe;
+  padding: 10px 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* TimeTreeと共通の美しいシャドウ */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  max-width: 450px; /* Official SNSボタンの幅とピシッと統一 */
+  margin: 0 auto; /* 中央揃え */
+  text-align: left; /* 中のテキストは読みやすいように左揃え */
+}
+
+/* 外部コードが出力する箇条書き(ul, li)の不要な黒ポチを消し、隙間を整える */
+.rss-card ul.feed-items {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.rss-card li.feed-item {
+  border-bottom: 1px solid #eef2f5; /* 少し優しく、なじむ線の色に変更 */
+  padding: 24px 0 !important; /* ➔ 上下の余白を1.5倍に広げ、「1行分の隙間」を作りました */
+  margin: 0 !important;
+  transition: background-color 0.2s;
+}
+
+/* ➔ さらに読みやすくするため、記事のタイトル文字自体の上下の隙間も微調整 */
+.rss-card li.feed-item a {
+  color: #333333 !important;
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6; /* 行間を少し広げてゆったりと */
+  display: block;
+  transition:
+    color 0.2s,
+    padding-left 0.2s;
+}
+
+/* マウスを乗せた（ホバーした）とき、またはスマホでタップしたときの動き */
+.rss-card li.feed-item a:hover {
+  color: #00a896 !important; /* FCメヒカリのエメラルドグリーンに変化 */
+  padding-left: 4px; /* 右側に少しだけスッと動く、プロっぽい演出 */
 }
