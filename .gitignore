@@ -5,3 +5,6 @@ events/tomioka/Project_富岡/
 
 # 変換済みmp4（assets/goal.mp4）を使用するため、未使用の元動画は除外
 events/tomioka/assets/goal.MOV
+
+# コーディネーター講習会: 社内作業用フォルダ（下書き・元画像等）は非公開のため除外
+events/coordinator/Project_コーディネーター講習/
