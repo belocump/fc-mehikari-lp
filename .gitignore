@@ -1,0 +1,7 @@
+.DS_Store
+
+# 富岡イベント: 社内作業用フォルダ（企画書・補助金資料・下書き等）は非公開のため除外
+events/tomioka/Project_富岡/
+
+# 変換済みmp4（assets/goal.mp4）を使用するため、未使用の元動画は除外
+events/tomioka/assets/goal.MOV

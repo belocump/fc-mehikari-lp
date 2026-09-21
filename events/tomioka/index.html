@@ -1,389 +1,207 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>避難者被災者心の復興ウォーキングフットボールin富岡（仮称）</title>
-<meta name="description" content="2026年11月23日、富岡町のさくらスポーツクラブ ふれあいドームで開催。走らない・接触しないウォーキングフットボールを通じて、被災者・避難者のみなさんと心の交流をつくる時間です。">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8c96b">
+  <title>避難者被災者 心の復興ウォーキングフットボールin富岡</title>
+  <meta name="description" content="2026年11月23日（月・祝）、富岡ふれあいドームで開催。歩くサッカーを通して、みんなで楽しくつながる交流イベントです。だれでも参加できます。要予約。">
+  <meta property="og:title" content="避難者被災者 心の復興ウォーキングフットボールin富岡">
+  <meta property="og:description" content="歩くから、だれでも楽しめる。2026年11月23日、富岡ふれあいドームで一緒に楽しみませんか">
+  <meta property="og:url" content="https://walking-football.fc-mehikari.org/events/tomioka/">
+  <meta property="og:image" content="https://walking-football.fc-mehikari.org/events/tomioka/assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://walking-football.fc-mehikari.org/events/tomioka/assets/og-image.png">
+  <link rel="icon" href="/img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream:#fffaf0;--paper:#fff;--honey:#f8c96b;--honey-deep:#f3b34f;--honey-soft:#fde9b9;
+      --leaf:#698857;--leaf-dark:#2f5138;--leaf-pale:#e9f0dc;--navy:#17364a;--ink:#1c2417;
+      --coral:#ea6b58;--pink:#f7b4b5;--line:#d9dfcb;--muted:#5d685f;
+      --shadow:0 18px 50px rgba(50,77,55,.12);--radius-lg:40px;--radius-md:26px;
+      --font-heading:"M PLUS Rounded 1c","Noto Sans JP",sans-serif;
+      --font-body:"Noto Sans JP",system-ui,sans-serif;--wrap:min(1160px,calc(100% - 40px));
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;overflow-x:hidden;background:var(--cream);color:var(--navy);font-family:var(--font-body);line-height:1.8;-webkit-font-smoothing:antialiased}
+    body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.32;background-image:radial-gradient(rgba(53,91,66,.18) .7px,transparent .7px);background-size:20px 20px}
+    img{display:block;max-width:100%}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--coral);outline-offset:4px}
+    h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:var(--font-heading);line-height:1.3;letter-spacing:.01em}
+    .skip-link{position:fixed;left:16px;top:12px;z-index:100;transform:translateY(-150%);padding:10px 16px;border-radius:999px;background:var(--navy);color:#fff}.skip-link:focus{transform:translateY(0)}
+    .site-header{position:sticky;top:0;z-index:30;background:rgba(255,250,240,.92);border-bottom:1px solid rgba(105,136,87,.16);backdrop-filter:blur(14px)}
+    .site-header__inner{width:var(--wrap);min-height:72px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-heading);font-weight:800;text-decoration:none}.brand__mark{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--leaf-dark);color:#fff;font-size:17px}
+    .header-link{padding:10px 20px;border:0;border-radius:999px;background:var(--honey);color:var(--ink);font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(243,179,79,.35);transition:transform .2s,box-shadow .2s}.header-link:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(243,179,79,.42)}
 
-<!-- SNSシェア時のサムネイル（OGP）設定 -->
-<meta property="og:title" content="避難者被災者心の復興ウォーキングフットボールin富岡（仮称）">
-<meta property="og:description" content="2026年11月23日、富岡町のさくらスポーツクラブ ふれあいドームで開催。走らない・接触しないウォーキングフットボールを通じて、被災者・避難者のみなさんと心の交流をつくる時間です。">
-<meta property="og:url" content="https://walking-football.fc-mehikari.org/events/tomioka/">
-<meta property="og:image" content="https://walking-football.fc-mehikari.org/img/samnail.png">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://walking-football.fc-mehikari.org/img/samnail.png">
+    /* ===== Hero: full-bleed video + Carefree-style honey block (MoMoney layout, Carefree warmth) ===== */
+    .hero{position:relative;width:100%;min-height:calc(100svh - 72px);overflow:hidden;background:var(--ink)}
+    .hero__media{position:absolute;inset:0}
+    .hero__video,.hero__media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+    .hero__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,32,23,.05) 0%,rgba(17,32,23,.18) 45%,rgba(17,32,23,.72) 100%)}
+    .hero__inner{position:relative;z-index:1;display:flex;min-height:calc(100svh - 72px);align-items:flex-end;padding:clamp(20px,4vw,56px)}
+    .hero__block{max-width:min(640px,88vw);padding:clamp(26px,3.4vw,46px);border-radius:var(--radius-lg);background:var(--honey);box-shadow:0 30px 70px rgba(10,18,12,.35);transform:rotate(-1deg)}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.7);color:var(--leaf-dark);font-size:.86rem;font-weight:800}.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--coral)}
+    .hero__block h1{margin-bottom:16px;color:var(--ink);font-size:clamp(2rem,4.6vw,3.6rem);font-weight:900;line-height:1.22}
+    .hero__block h1 .small{display:block;margin-bottom:6px;font-size:.4em;font-weight:800;color:var(--leaf-dark)}
+    .hero__block h1 .accent{position:relative;display:inline-block;white-space:nowrap}.hero__block h1 .accent::after{content:"";position:absolute;left:-.05em;right:-.05em;bottom:.04em;height:.16em;z-index:0;border-radius:999px;background:var(--pink);transform:rotate(-1.4deg)}.hero__block h1 .accent>span{position:relative;z-index:1}
+    .hero__lead{max-width:32rem;margin-bottom:22px;color:var(--ink);font-size:clamp(.98rem,1.4vw,1.1rem);font-weight:500}
+    .button-row{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+    .button{display:inline-flex;min-height:54px;align-items:center;justify-content:center;gap:10px;padding:13px 24px;border:0;border-radius:999px;background:var(--leaf-dark);color:#fff;box-shadow:0 10px 22px rgba(23,40,28,.28);font-family:var(--font-heading);font-weight:800;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}.button:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(23,40,28,.34);background:#264229}.button--light{background:#fff;color:var(--leaf-dark);box-shadow:none}.button--light:hover{background:var(--leaf-pale)}.button__arrow{font-size:1.2em;transition:transform .2s}.button:hover .button__arrow{transform:translateX(3px)}
 
-<link rel="icon" href="/img/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<style>
-/* Hallmark · genre: editorial · macrostructure: Long Document · theme: Garden (custom OKLCH within catalog family) · enrichment: none (typography only) · nav: N9 · footer: Ft6 */
-/* Hallmark · pre-emit critique: P5 H4 E4 S4 R5 V5 */
+    /* fact bar: MoMoney "as seen in" ticker, repurposed as quick facts */
+    .fact-bar{width:100%;background:var(--leaf-dark);color:#fff}
+    .fact-bar__inner{width:var(--wrap);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0;padding:16px 0;list-style:none}
+    .fact-bar__inner li{position:relative;padding:6px 20px;font-family:var(--font-heading);font-weight:800;font-size:.92rem;white-space:nowrap}
+    .fact-bar__inner li:not(:last-child)::after{content:"・";position:absolute;right:-3px;top:50%;transform:translateY(-50%);color:var(--honey)}
 
-:root {
-  /* colour — Garden: warm cream paper, leaf-green accent */
-  --color-paper:    oklch(97% 0.014 108);
-  --color-paper-2:  oklch(94% 0.016 108);
-  --color-rule:     oklch(85% 0.020 122);
-  --color-neutral:  oklch(58% 0.030 130);
-  --color-muted:    oklch(42% 0.025 130);
-  --color-ink:      oklch(22% 0.020 135);
-  --color-accent:   oklch(46% 0.100 145);
-  --color-accent-2: oklch(46% 0.100 145 / 0.14);
-  --color-focus:    oklch(55% 0.130 145);
+    main{padding-bottom:110px}
+    .section{padding:clamp(80px,10vw,140px) 0 0}.section__inner{width:var(--wrap);margin:0 auto}.section-heading{max-width:760px;margin-bottom:42px}
+    .section-heading__label{display:inline-block;margin-bottom:14px;padding:5px 12px;border-radius:8px;background:var(--ink);color:var(--honey);font-family:var(--font-heading);font-size:.8rem;font-weight:800;letter-spacing:.1em}
+    .section-heading h2{margin-bottom:16px;font-size:clamp(1.85rem,3.3vw,3.25rem);font-weight:800}.section-heading p{max-width:40rem;margin-bottom:0;color:var(--muted)}
+    .highlight{display:inline;padding:.02em .28em;border-radius:8px;background:var(--honey);box-decoration-break:clone;-webkit-box-decoration-break:clone}
 
-  /* type */
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
-  --font-body:    "Newsreader", ui-serif, Georgia, serif;
+    .welcome-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.welcome-card{padding:clamp(24px,3vw,38px);border:1px solid rgba(105,136,87,.22);border-radius:var(--radius-md);background:rgba(255,255,255,.78);box-shadow:0 10px 30px rgba(53,91,66,.06)}.welcome-card:nth-child(2){background:var(--leaf-pale)}.welcome-card:nth-child(3){background:#fff0e9}.welcome-card__icon{display:grid;width:58px;height:58px;margin-bottom:20px;place-items:center;border-radius:20px;background:var(--honey-soft);font-size:1.6rem}.welcome-card h3{margin-bottom:10px;font-size:1.25rem}.welcome-card p{margin:0;color:var(--muted);font-size:.95rem}
 
-  --text-xs:   0.75rem;
-  --text-sm:   0.875rem;
-  --text-base: 1.0625rem;
-  --text-md:   1.25rem;
-  --text-lg:   1.5625rem;
-  --text-xl:   1.9531rem;
-  --text-2xl:  2.4414rem;
-  --text-3xl:  3.0518rem;
-  --text-display-s: clamp(2rem, 3.2vw + 1rem, 2.6rem);
+    .story{display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:clamp(34px,7vw,88px);padding:clamp(30px,5vw,64px);border-radius:var(--radius-lg);background:var(--leaf-pale)}.story__image-wrap{position:relative}.story__image{width:100%;aspect-ratio:1362/775;object-fit:cover;border:8px solid #fff;border-radius:24px;box-shadow:var(--shadow);transform:rotate(-1.2deg)}.story__copy h2{font-size:clamp(1.85rem,3vw,3rem)}.story__copy p{color:var(--muted)}.handwritten{display:inline-block;margin:4px 0 22px;padding-bottom:3px;border-bottom:6px solid var(--pink);color:var(--leaf-dark);font-family:var(--font-heading);font-size:1.2rem;font-weight:800;transform:rotate(-1deg)}
 
-  /* space — 4pt scale */
-  --space-3xs: 0.125rem;
-  --space-2xs: 0.25rem;
-  --space-xs:  0.5rem;
-  --space-sm:  0.75rem;
-  --space-md:  1rem;
-  --space-lg:  1.5rem;
-  --space-xl:  2.5rem;
-  --space-2xl: 4rem;
-  --space-3xl: 6rem;
-  --space-4xl: 9rem;
+    .event-panel{display:grid;grid-template-columns:.8fr 1.2fr;overflow:hidden;border-radius:var(--radius-lg);background:var(--paper);box-shadow:var(--shadow)}.event-panel__title{padding:clamp(32px,5vw,64px);background:var(--leaf-dark);color:#fff}.event-panel__title .section-heading__label{background:var(--honey);color:var(--ink)}.event-panel__title h2{font-size:clamp(2rem,3.5vw,3.6rem)}.event-panel__title p{margin:0;color:rgba(255,255,255,.78)}.event-details{margin:0;padding:clamp(26px,5vw,60px)}.event-details__row{display:grid;grid-template-columns:7rem 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}.event-details__row:first-child{padding-top:0}.event-details__row:last-child{padding-bottom:0;border-bottom:0}.event-details dt{color:var(--leaf);font-weight:700}.event-details dd{margin:0;font-weight:700}.event-details small{display:block;margin-top:4px;color:var(--muted);font-weight:400}.reservation-badge{display:inline-block;margin-left:8px;padding:3px 10px;border-radius:999px;background:var(--coral);color:#fff;font-size:.8rem}
 
-  --page-gutter: clamp(1.25rem, 5vw, 3rem);
+    .schedule-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.schedule-card{position:relative;padding:clamp(28px,4vw,44px);overflow:hidden;border-radius:var(--radius-md);background:var(--honey-soft)}.schedule-card:nth-child(2){background:var(--leaf-pale)}.schedule-card__time{display:inline-block;margin-bottom:14px;color:var(--coral);font-family:var(--font-heading);font-size:clamp(1.6rem,3vw,2.6rem);font-weight:800}.schedule-card h3{margin-bottom:10px;font-size:1.3rem}.schedule-card p{margin:0;color:var(--muted)}.schedule-card__number{position:absolute;right:22px;top:10px;color:rgba(23,54,74,.08);font-family:var(--font-heading);font-size:5rem;font-weight:800;line-height:1}
 
-  /* motion */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in:  cubic-bezier(0.7, 0, 0.84, 0);
-  --dur-micro: 120ms;
-  --dur-short: 220ms;
-  --dur-long:  420ms;
-}
+    .flyer-layout{display:grid;grid-template-columns:minmax(300px,.78fr) 1.22fr;align-items:center;gap:clamp(36px,7vw,90px)}.flyer-preview{overflow:hidden;border:10px solid #fff;border-radius:20px;background:#fff;box-shadow:var(--shadow);transform:rotate(1.5deg)}.flyer-preview img{width:100%;height:auto}.flyer-copy h2{font-size:clamp(1.8rem,3vw,3rem)}.flyer-copy p{color:var(--muted)}.text-link{display:inline-flex;align-items:center;gap:8px;color:var(--leaf-dark);font-weight:700;text-underline-offset:5px;text-decoration-thickness:2px}
 
-* { box-sizing: border-box; }
-html { overflow-x: clip; }
-body {
-  overflow-x: clip;
-  margin: 0;
-  background: var(--color-paper);
-  color: var(--color-ink);
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-}
+    .faq-list{max-width:860px}.faq-item{border-top:1px solid var(--line)}.faq-item:last-child{border-bottom:1px solid var(--line)}.faq-item summary{position:relative;cursor:pointer;padding:24px 52px 24px 0;font-family:var(--font-heading);font-size:1.08rem;font-weight:700;list-style:none}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary::after{content:"+";position:absolute;right:10px;top:50%;transform:translateY(-50%);color:var(--coral);font-size:1.8rem;font-weight:500}.faq-item[open] summary::after{content:"−"}.faq-item p{max-width:700px;margin:0;padding:0 52px 24px 0;color:var(--muted)}
 
-a { color: inherit; }
-a:focus-visible, button:focus-visible {
-  outline: 2px solid var(--color-focus);
-  outline-offset: 3px;
-}
+    .final-cta{position:relative;overflow:hidden;padding:clamp(46px,8vw,90px) clamp(24px,6vw,74px);border-radius:var(--radius-lg);background:var(--honey);text-align:center;box-shadow:var(--shadow)}.final-cta::before,.final-cta::after{content:"";position:absolute;width:170px;height:170px;border:26px solid rgba(255,255,255,.28);border-radius:50%}.final-cta::before{left:-90px;bottom:-100px}.final-cta::after{right:-80px;top:-100px}.final-cta h2{position:relative;margin-bottom:14px;font-size:clamp(2rem,4vw,4rem)}.final-cta p{position:relative;max-width:620px;margin:0 auto 26px}.final-cta .button{position:relative}.contact-note{margin-top:14px!important;font-size:.78rem;color:#425445}
 
-h1, h2, h3 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-style: normal;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  color: var(--color-ink);
-  margin: 0;
-}
+    footer{padding:48px 0 110px;background:var(--leaf-dark);color:#fff}.footer__inner{width:var(--wrap);display:grid;grid-template-columns:1fr 1.2fr;gap:40px;margin:0 auto}.footer__message{font-family:var(--font-heading);font-size:1.35rem;font-weight:700}.footer__details{color:rgba(255,255,255,.75);font-size:.82rem}.footer__details p{margin-bottom:10px}.footer__details a{text-underline-offset:4px}
+    .mobile-cta{display:none;position:fixed;z-index:30;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));min-height:58px;align-items:center;justify-content:center;border-radius:999px;background:var(--leaf-dark);color:#fff;box-shadow:0 12px 30px rgba(23,54,74,.3);font-family:var(--font-heading);font-weight:800;text-decoration:none}
 
-p { margin: 0 0 var(--space-lg); }
-
-/* ---------- nav: N9 edge-aligned minimal ---------- */
-.nav-edge {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--space-md);
-  padding: var(--space-lg) var(--page-gutter);
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.nav-edge .wordmark {
-  font-family: var(--font-display);
-  font-size: var(--text-md);
-  font-weight: 600;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.nav-edge .cta-outline {
-  font-family: var(--font-body);
-  font-size: var(--text-sm);
-  text-decoration: none;
-  white-space: nowrap;
-  padding: var(--space-xs) var(--space-md);
-  border: 1px solid var(--color-ink);
-  border-radius: 999px;
-  transition: background-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out);
-}
-.nav-edge .cta-outline:hover {
-  background: var(--color-ink);
-  color: var(--color-paper);
-}
-.nav-edge .cta-outline:active { transform: translateY(1px); }
-
-/* ---------- article / long document ---------- */
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 var(--page-gutter) var(--space-3xl);
-}
-.prose {
-  max-width: 66ch;
-}
-.prose--wide { max-width: 62ch; }
-
-.banner {
-  display: block;
-  width: 100%;
-  max-width: 480px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.hero {
-  padding-top: var(--space-2xl);
-  padding-bottom: var(--space-2xl);
-}
-.hero .kicker {
-  font-family: var(--font-body);
-  font-style: italic;
-  font-size: var(--text-md);
-  color: var(--color-muted);
-  margin: 0 0 var(--space-sm);
-}
-.hero h1 {
-  font-size: var(--text-display-s);
-  overflow-wrap: anywhere;
-  min-width: 0;
-}
-.hero .lede {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: var(--text-lg);
-  line-height: 1.5;
-  color: var(--color-ink);
-  margin-top: var(--space-lg);
-  max-width: 60ch;
-}
-
-article.prose h2.inline {
-  font-size: var(--text-md);
-  font-weight: 600;
-  margin: var(--space-2xl) 0 var(--space-sm);
-  padding-bottom: var(--space-2xs);
-  border-bottom: 1px solid var(--color-rule);
-  display: inline-block;
-}
-
-article.prose .note {
-  font-style: italic;
-  color: var(--color-muted);
-  font-size: var(--text-sm);
-}
-
-article.prose ul {
-  margin: 0 0 var(--space-lg);
-  padding-left: 1.2em;
-}
-article.prose li { margin-bottom: var(--space-xs); }
-
-.schedule {
-  list-style: none;
-  margin: var(--space-md) 0 var(--space-lg);
-  padding: 0;
-  border-top: 1px solid var(--color-rule);
-}
-.schedule li {
-  display: flex;
-  gap: var(--space-lg);
-  padding: var(--space-sm) 0;
-  border-bottom: 1px solid var(--color-rule);
-  font-size: var(--text-sm);
-}
-.schedule time {
-  flex: 0 0 4.5em;
-  font-variant-numeric: tabular-nums;
-  color: var(--color-accent);
-  font-weight: 600;
-}
-.schedule .desc { color: var(--color-ink); }
-.schedule .sub { display: block; color: var(--color-muted); font-size: var(--text-xs); margin-top: var(--space-3xs); }
-
-.facts {
-  margin: var(--space-md) 0 var(--space-lg);
-  padding: var(--space-md) var(--space-lg);
-  background: var(--color-paper-2);
-  border-radius: 2px;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-sm);
-}
-@media (min-width: 560px) {
-  .facts { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
-}
-.facts dt {
-  font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-muted);
-  font-family: var(--font-body);
-}
-.facts dd {
-  margin: var(--space-3xs) 0 0;
-  font-size: var(--text-base);
-}
-
-mark {
-  background: var(--color-accent-2);
-  color: var(--color-ink);
-  padding: 0 0.15em;
-  box-decoration-break: clone;
-}
-
-.inline-link {
-  color: var(--color-accent);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.15em;
-  text-decoration-color: var(--color-rule);
-  transition: text-decoration-color var(--dur-short) var(--ease-out);
-}
-.inline-link:hover { text-decoration-color: var(--color-accent); }
-
-.status-note {
-  margin-top: var(--space-2xl);
-  padding: var(--space-md) var(--space-lg);
-  border-left: 2px solid var(--color-accent);
-  background: var(--color-paper-2);
-  font-size: var(--text-sm);
-  color: var(--color-muted);
-}
-.status-note strong { color: var(--color-ink); font-weight: 600; }
-
-/* ---------- footer: Ft6 letter close ---------- */
-.foot-letter {
-  padding: var(--space-3xl) var(--page-gutter) var(--space-2xl);
-  max-width: 1100px;
-  margin: 0 auto;
-  border-top: 1px solid var(--color-rule);
-}
-.foot-letter__inner { max-width: 60ch; }
-.foot-letter__close {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: var(--text-lg);
-  line-height: 1.4;
-  margin-bottom: var(--space-md);
-}
-.foot-letter__sign { font-style: normal; font-weight: 600; }
-.foot-letter__ps {
-  font-size: var(--text-sm);
-  color: var(--color-muted);
-  margin-bottom: var(--space-2xs);
-}
-.foot-letter__org {
-  font-size: var(--text-xs);
-  color: var(--color-muted);
-  margin-top: var(--space-xl);
-  line-height: 1.7;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 1ms !important;
-    transition-duration: 1ms !important;
-  }
-}
-
-@media (max-width: 420px) {
-  .nav-edge .wordmark { font-size: var(--text-sm); }
-  .schedule li { gap: var(--space-md); }
-}
-</style>
+    @media(max-width:920px){
+      .hero{min-height:auto}.hero__inner{min-height:auto;align-items:stretch;padding:0;flex-direction:column}
+      .hero__media{position:relative;inset:auto;aspect-ratio:16/9}
+      .hero__video,.hero__media img{position:absolute}
+      .hero__block{max-width:none;margin:-32px 16px 0;transform:none;border-radius:28px;position:relative;z-index:1}
+      .fact-bar__inner{padding:14px 20px}
+      .welcome-grid{grid-template-columns:1fr}.story,.event-panel,.flyer-layout{grid-template-columns:1fr}.flyer-preview{max-width:520px}
+    }
+    @media(max-width:640px){
+      :root{--wrap:min(1160px,calc(100% - 28px));--radius-lg:28px}
+      .site-header__inner{min-height:64px}.brand__mark{width:32px;height:32px}
+      main{padding-bottom:86px}
+      .header-link{display:none}
+      .hero__block{padding:22px}
+      .fact-bar__inner li{width:100%;text-align:center;padding:6px 0}.fact-bar__inner li:not(:last-child)::after{content:"";display:none}.fact-bar__inner li:not(:last-child){border-bottom:1px dashed rgba(255,255,255,.2)}
+      .button-row{align-items:stretch;flex-direction:column}.button{width:100%}
+      .section{padding-top:82px}.section-heading{margin-bottom:28px}.story{padding:20px}.event-panel__title,.event-details{padding:28px 22px}.event-details__row{grid-template-columns:1fr;gap:4px}.schedule-grid{grid-template-columns:1fr}.flyer-layout{grid-template-columns:1fr}.flyer-preview{width:min(88%,420px);margin:0 auto}.footer__inner{grid-template-columns:1fr;gap:18px}.mobile-cta{display:flex}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important}}
+  </style>
 </head>
 <body>
-
-<header class="nav-edge">
-  <a class="wordmark" href="/">FCメヒカリ</a>
-  <a class="cta-outline" href="mailto:walkingfootball@fc-mehikari.org?subject=富岡イベントについて">問い合わせる</a>
-</header>
-
-<img class="banner" src="/img/banner.JPG" alt="避難者被災者心の復興ウォーキングフットボールin富岡">
-
-<main id="top">
-  <section class="hero">
-    <p class="kicker">2026年11月23日（月・祝）・富岡町</p>
-    <h1>避難者被災者心の復興<br>ウォーキングフットボールin富岡</h1>
-    <p class="lede">11月23日、富岡町のさくらスポーツクラブ ふれあいドームで、ボールを蹴りながら、少しずつ言葉を交わす時間をつくります。走らない、ぶつからない——それがウォーキングフットボールです。</p>
-  </section>
-
-  <article class="prose">
-    <p>東日本大震災から時が経ったいまも、故郷を離れて暮らす方、故郷に残って歩みを続ける方、それぞれの時間があります。この日は、早双地区（双葉・相馬など）で暮らす方と、いわき・郡山など県内の避難先で暮らす方が、同じコートに立ちます。歩いてボールを追う、ただそれだけの時間ですが、隣の人と少し言葉を交わすきっかけになればと考えています。</p>
-
-    <p>主催はNPO法人ツークンフト ロカール（福島県の補助事業として実施）、運営は一般社団法人ふくしま健康デザイン ウォーキングフットボールクラブ FCメヒカリです。</p>
-
-    <h2 class="inline">日時と会場</h2>
-    <dl class="facts">
-      <div>
-        <dt>日時</dt>
-        <dd>2026年11月23日（月・祝）13:00〜15:00</dd>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="FCメヒカリ ホーム"><span class="brand__mark" aria-hidden="true">FC</span><span>FCメヒカリ</span></a>
+      <a class="header-link" href="#contact">参加について問い合わせる</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <video class="hero__video" id="hero-video" autoplay muted loop playsinline poster="assets/walking-football-main.png" aria-hidden="true">
+          <source src="assets/goal.mp4" type="video/mp4">
+        </video>
+        <div class="hero__scrim" aria-hidden="true"></div>
       </div>
-      <div>
-        <dt>会場</dt>
-        <dd>さくらスポーツクラブ ふれあいドーム（福島県双葉郡富岡町）</dd>
+      <div class="hero__inner">
+        <div class="hero__block">
+          <p class="eyebrow">11月23日（月・祝） 富岡町で開催</p>
+          <h1 id="hero-title"><span class="small">避難者被災者 心の復興</span>歩くことで、<br><span class="accent"><span>つながる</span></span></h1>
+          <p class="hero__lead">勝ち負けよりも、みんなで過ごすいい時間を大切にするイベントです。富岡町内の方も、町外の避難先で暮らす方も、どうぞ気軽にご参加ください。</p>
+          <div class="button-row">
+            <a class="button" href="mailto:walkingfootball@fc-mehikari.org?subject=富岡イベント参加について&amp;body=富岡イベントへの参加について問い合わせます%0A%0Aお名前：%0A参加人数：%0Aご連絡先：">参加について問い合わせる <span class="button__arrow" aria-hidden="true">→</span></a>
+            <a class="button button--light" href="#details">開催概要を見る</a>
+          </div>
+        </div>
       </div>
-    </dl>
-    <p class="note">屋内開催のため、荒天による中止は基本的に想定していません。</p>
-
-    <h2 class="inline">参加していただきたい方</h2>
-    <p>早双地区（双葉・相馬など）の被災住民の方、県内避難先（いわき・郡山など）にお住まいの避難者・被災者の方。10歳以上でしたら、ボール経験の有無は問いません。目標は30名ほど、いくつかの団体の方が一緒に集まるくらいの規模を考えています。</p>
-    <p class="note">参加費は現在調整中です。決まり次第このページに追記します。</p>
-
-    <h2 class="inline">当日の流れ</h2>
-    <ul class="schedule">
-      <li><time>12:30</time><span class="desc">受付開始</span></li>
-      <li><time>13:00</time><span class="desc">開会あいさつ</span></li>
-      <li><time>13:10</time><span class="desc">ルール説明・ボール慣れ<span class="sub">接触禁止・ボール保持6秒ルールをご説明します</span></span></li>
-      <li><time>13:30</time><span class="desc">ミニゲーム<span class="sub">できるだけ多様な方が混ざるようチーム編成します</span></span></li>
-      <li><time>14:00</time><span class="desc">休憩・交流タイム</span></li>
-      <li><time>14:20</time><span class="desc">ゲーム</span></li>
-      <li><time>14:50</time><span class="desc">集合写真・閉会あいさつ</span></li>
-      <li><time>15:00</time><span class="desc">解散</span></li>
-    </ul>
-
-    <h2 class="inline">安心して参加いただくために</h2>
-    <p>ウォーキングフットボールは、<mark>走らない・ぶつからない</mark>ことを前提にしたスポーツです。相手のボールを奪いに行かない、後方からの無理なチャレンジをしない、ボールは6秒以内に手放す——この3つを守れば、体力や経験に関わらずどなたでも参加できます。運動が久しぶりという方も、ぜひ気負わずお越しください。</p>
-
-    <h2 class="inline">これまでの実績</h2>
-    <p>FCメヒカリは令和7年度いわき市まち未来創造支援事業補助金の実施団体として、JFA公式プログラム「ウォーキングひろば」を6回開催してきました。延べ106名、平均17.7名の方にご参加いただき、「安心して参加しやすい環境だった」というお声を多くいただいています。今回もその経験を活かして進めます。</p>
-
-    <p class="status-note"><strong>ページは現在準備中です。</strong>イベント名称・参加費・お申し込み方法など、一部の情報は確定次第このページを更新します。ご不明な点や、団体としての参加をご検討の方は、下記までお気軽にお問い合わせください。</p>
-
-    <p>参加をご検討の方、詳しいご案内をご希望の方は <a class="inline-link" href="mailto:walkingfootball@fc-mehikari.org?subject=富岡イベントについて">walkingfootball@fc-mehikari.org へメールでお問い合わせ</a>ください。折り返しご連絡いたします。</p>
-  </article>
-</main>
-
-<footer class="foot-letter">
-  <div class="foot-letter__inner">
-    <p class="foot-letter__close">当日、コートでお会いできることを楽しみにしています。<br><span class="foot-letter__sign">— FCメヒカリ</span></p>
-    <p class="foot-letter__ps">お問い合わせは <a class="inline-link" href="mailto:walkingfootball@fc-mehikari.org">walkingfootball@fc-mehikari.org</a> まで。</p>
-    <p class="foot-letter__org">主催：NPO法人ツークンフト ロカール（福島県補助事業）<br>運営：一般社団法人ふくしま健康デザイン ウォーキングフットボールクラブ FCメヒカリ</p>
-  </div>
-</footer>
-
+    </section>
+    <nav class="fact-bar" aria-label="開催概要（要点）">
+      <ul class="fact-bar__inner">
+        <li>2026年11月23日（月・祝）</li><li>14:00〜16:30</li><li>富岡ふれあいドーム</li><li>おひとり500円</li><li>だれでも参加OK・要予約</li>
+      </ul>
+    </nav>
+    <section class="section" aria-labelledby="welcome-title"><div class="section__inner">
+      <div class="section-heading"><span class="section-heading__label">01・WELCOME</span><h2 id="welcome-title">はじめてでも、久しぶりでも、<span class="highlight">だいじょうぶ</span></h2><p>サッカー経験や体力に関係なく、それぞれのペースで楽しめます。富岡町内の方も、町外の避難先で暮らす方も、どうぞ気軽にご参加ください。</p></div>
+      <div class="welcome-grid">
+        <article class="welcome-card"><div class="welcome-card__icon" aria-hidden="true">🚶</div><h3>走らない</h3><p>コートの中は歩いてプレー。運動が久しぶりの方も無理なく参加できます。</p></article>
+        <article class="welcome-card"><div class="welcome-card__icon" aria-hidden="true">🤝</div><h3>ぶつからない</h3><p>強い接触を避けながらプレーします。安心して一緒にボールを楽しめます。</p></article>
+        <article class="welcome-card"><div class="welcome-card__icon" aria-hidden="true">☺</div><h3>だれでも</h3><p>経験や年齢を問わず、だれでも歓迎。見学や参加についても気軽にご相談ください。</p></article>
+      </div>
+    </div></section>
+    <section class="section" aria-labelledby="story-title"><div class="section__inner story">
+      <div class="story__image-wrap"><img class="story__image" src="assets/walking-football-group.png" alt="ウォーキングフットボールを楽しんだ幅広い年代の参加者たち" width="1362" height="775" loading="lazy"></div>
+      <div class="story__copy"><span class="section-heading__label">02・TOGETHER</span><h2 id="story-title">歩くことで、つながる</h2><span class="handwritten">みんなで、いい時間</span><p>同じコートでボールを追うと、自然と声をかけ合い、笑顔が生まれます。競技としての勝ち負けよりも、人と人が出会い、再会し、交流することを大切にします。</p><p>一人での参加も、ご家族やお知り合いとの参加も歓迎です。</p></div>
+    </div></section>
+    <section class="section" id="details" aria-labelledby="details-title"><div class="section__inner event-panel">
+      <div class="event-panel__title"><span class="section-heading__label">03・EVENT INFO</span><h2 id="details-title">開催概要</h2><p>当日は運動できる服装でお越しください。ご不明な点は事前にお問い合わせいただけます。</p></div>
+      <dl class="event-details">
+        <div class="event-details__row"><dt>日時</dt><dd>2026年11月23日（月・祝）<br>14:00〜16:30</dd></div>
+        <div class="event-details__row"><dt>会場</dt><dd>富岡ふれあいドーム</dd></div>
+        <div class="event-details__row"><dt>対象</dt><dd>だれでも！ <span class="reservation-badge">要予約</span><small>富岡町内の方はもちろん、町外の避難先で暮らす皆さんもご参加いただけます</small></dd></div>
+        <div class="event-details__row"><dt>参加費</dt><dd>おひとり500円<small>未就学児は無料です</small></dd></div>
+        <div class="event-details__row"><dt>持ち物</dt><dd>運動できる服装・室内用シューズ</dd></div>
+      </dl>
+    </div></section>
+    <section class="section" aria-labelledby="schedule-title"><div class="section__inner">
+      <div class="section-heading"><span class="section-heading__label">04・PROGRAM</span><h2 id="schedule-title">当日のプログラム</h2><p>ボールを使って体を動かしたあとは、ゆっくりお話しできる交流の時間を設けています。</p></div>
+      <div class="schedule-grid">
+        <article class="schedule-card"><span class="schedule-card__number" aria-hidden="true">1</span><time class="schedule-card__time" datetime="2026-11-23T14:00">14:00〜15:30</time><h3>ウォーキングフットボール</h3><p>簡単なルール説明から始め、みんなで歩くサッカーを楽しみます。</p></article>
+        <article class="schedule-card"><span class="schedule-card__number" aria-hidden="true">2</span><time class="schedule-card__time" datetime="2026-11-23T15:30">15:30〜16:30</time><h3>歓談・交流タイム</h3><p>プレーのあとはひと息ついて、参加した皆さんで交流します。</p></article>
+      </div>
+    </div></section>
+    <section class="section" aria-labelledby="flyer-title"><div class="section__inner flyer-layout">
+      <a class="flyer-preview" href="assets/心の復興.pdf" target="_blank" rel="noopener" aria-label="イベントチラシPDFを開く"><img src="assets/event-flyer.png" alt="避難者被災者 心の復興ウォーキングフットボールin富岡のイベントチラシ" width="1157" height="1637" loading="lazy"></a>
+      <div class="flyer-copy"><span class="section-heading__label">05・FLYER</span><h2 id="flyer-title">チラシでもご確認いただけます</h2><p>ご家族やお知り合いへの共有にもお使いください。画像を選ぶと、PDF版のチラシが開きます。</p><a class="text-link" href="assets/心の復興.pdf" target="_blank" rel="noopener">チラシPDFを開く <span aria-hidden="true">↗</span></a></div>
+    </div></section>
+    <section class="section" aria-labelledby="faq-title"><div class="section__inner">
+      <div class="section-heading"><span class="section-heading__label">06・FAQ</span><h2 id="faq-title">よくあるご質問</h2></div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>サッカーをしたことがなくても参加できますか？</summary><p>はい。経験は問いません。最初にルールをご案内し、歩くペースで進めます。</p></details>
+        <details class="faq-item"><summary>一人でも参加できますか？</summary><p>もちろんです。一人での参加も、ご家族・お知り合い・団体での参加も歓迎しています。</p></details>
+        <details class="faq-item"><summary>何を持っていけばよいですか？</summary><p>運動できる服装と室内用シューズをご用意ください。</p></details>
+        <details class="faq-item"><summary>参加には予約が必要ですか？</summary><p>はい、要予約です。現在はメールで参加についてお問い合わせください。具体的な申込み導線が決まり次第、このページを更新します。</p></details>
+      </div>
+    </div></section>
+    <section class="section" id="contact" aria-labelledby="contact-title"><div class="section__inner final-cta">
+      <span class="section-heading__label">07・JOIN US</span><h2 id="contact-title">また、みんなで会えたら</h2><p>参加をご希望の方、団体での参加をご検討の方、ご不明な点がある方は、メールでお気軽にお問い合わせください。</p>
+      <a class="button" href="mailto:walkingfootball@fc-mehikari.org?subject=富岡イベント参加について&amp;body=富岡イベントへの参加について問い合わせます%0A%0Aお名前：%0A参加人数：%0Aご連絡先：">メールで問い合わせる <span class="button__arrow" aria-hidden="true">→</span></a>
+      <p class="contact-note">walkingfootball@fc-mehikari.org（担当：相原）</p>
+    </div></section>
+  </main>
+  <footer><div class="footer__inner">
+    <p class="footer__message">歩くことで、つながる<br>そして、また、あしたへ</p>
+    <div class="footer__details"><p>主催：NPO法人 ツークンフトロカール<br>福島県内避難者・被災者心の復興 スポーツ＆カルチャー交流事業2026</p><p>運営：一般社団法人ふくしま健康デザイン<br>ウォーキングフットボールクラブ FCメヒカリ</p><p><a href="mailto:walkingfootball@fc-mehikari.org">walkingfootball@fc-mehikari.org</a></p></div>
+  </div></footer>
+  <a class="mobile-cta" href="mailto:walkingfootball@fc-mehikari.org?subject=富岡イベント参加について">参加について問い合わせる</a>
+  <script>
+    (function(){
+      var v=document.getElementById('hero-video');
+      if(!v)return;
+      var reduceMotion=window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var conn=navigator.connection||navigator.webkitConnection||navigator.mozConnection;
+      var saveData=conn && (conn.saveData || /^(slow-2g|2g)$/.test(conn.effectiveType||''));
+      if(reduceMotion || saveData){
+        v.removeAttribute('autoplay');
+        v.pause();
+        v.removeAttribute('src');
+        v.querySelectorAll('source').forEach(function(s){s.remove();});
+        v.load();
+      }
+    })();
+  </script>
 </body>
 </html>
