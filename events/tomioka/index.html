@@ -34,6 +34,7 @@
     .site-header{position:sticky;top:0;z-index:30;background:rgba(255,250,240,.92);border-bottom:1px solid rgba(105,136,87,.16);backdrop-filter:blur(14px)}
     .site-header__inner{width:var(--wrap);min-height:72px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
     .brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--font-heading);font-weight:800;text-decoration:none}.brand__mark{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--leaf-dark);color:#fff;font-size:17px}
+    .header-program{flex:1;min-width:0;margin:0;text-align:center;font-size:13px;font-weight:700;line-height:1.5;color:var(--leaf-dark)}.header-program span{display:inline-block}
     .header-link{padding:10px 20px;border:0;border-radius:999px;background:var(--honey);color:var(--ink);font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(243,179,79,.35);transition:transform .2s,box-shadow .2s}.header-link:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(243,179,79,.42)}
 
     /* ===== Hero: full-bleed video + Carefree-style honey block (MoMoney layout, Carefree warmth) ===== */
@@ -94,6 +95,7 @@
       .site-header__inner{min-height:64px}.brand__mark{width:32px;height:32px}
       main{padding-bottom:86px}
       .header-link{display:none}
+      .header-program{font-size:10px;line-height:1.4;text-align:right}
       .hero__block{padding:22px}
       .fact-bar__inner li{width:100%;text-align:center;padding:6px 0}.fact-bar__inner li:not(:last-child)::after{content:"";display:none}.fact-bar__inner li:not(:last-child){border-bottom:1px dashed rgba(255,255,255,.2)}
       .button-row{align-items:stretch;flex-direction:column}.button{width:100%}
@@ -107,6 +109,7 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="/" aria-label="FCメヒカリ ホーム"><span class="brand__mark" aria-hidden="true">FC</span><span>FCメヒカリ</span></a>
+      <p class="header-program"><span>令和8年度</span>　<span>福島県県内避難者・被災者</span>　<span>心の復興事業補助金事業</span></p>
       <a class="header-link" href="https://reserve.fc-mehikari.org/reserve/tomioka-hukko/ee1cdb50-9684-49dc-a1a2-bc5ec96e2c10" target="_blank" rel="noopener">参加を申し込む</a>
     </div>
   </header>
@@ -187,7 +190,7 @@
   </main>
   <footer><div class="footer__inner">
     <p class="footer__message">歩くことで、つながる<br>そして、また、あしたへ</p>
-    <div class="footer__details"><p>主催：NPO法人 ツークンフトロカール<br>福島県内避難者・被災者心の復興 スポーツ＆カルチャー交流事業2026</p><p>運営：一般社団法人ふくしま健康デザイン<br>ウォーキングフットボールクラブ FCメヒカリ</p><p><a href="mailto:walkingfootball@fc-mehikari.org">walkingfootball@fc-mehikari.org</a></p></div>
+    <div class="footer__details"><p>主催：NPO法人 ツークンフトロカール<br>令和8年度　福島県県内避難者・被災者　心の復興事業補助金事業</p><p>運営：一般社団法人ふくしま健康デザイン<br>ウォーキングフットボールクラブ FCメヒカリ</p><p><a href="mailto:walkingfootball@fc-mehikari.org">walkingfootball@fc-mehikari.org</a></p></div>
   </div></footer>
   <a class="mobile-cta" href="https://reserve.fc-mehikari.org/reserve/tomioka-hukko/ee1cdb50-9684-49dc-a1a2-bc5ec96e2c10" target="_blank" rel="noopener">参加を申し込む</a>
   <script>
