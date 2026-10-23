@@ -82,6 +82,18 @@ body {
   margin-bottom: 50px;
 }
 
+.brand-card {
+  display: block;
+  max-width: 360px;
+  margin-bottom: 24px;
+}
+
+.brand-card img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
 .brand-logo-area {
   display: block;
   text-align: left;
@@ -563,6 +575,9 @@ body {
 }
 .btn-note {
   background-color: #232323;
+}
+.btn-facebook {
+  background-color: #1877f2;
 }
 
 /* 簡易フッター */
