@@ -154,6 +154,21 @@ body {
   background-color: #ffb03a;
 }
 
+/* CTAボタン下の注記 */
+.cta-note,
+.hero-section .cta-note {
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.cta-note a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 /* セクション小見出し */
 .sub-heading {
   font-size: 24px;
