@@ -84,7 +84,8 @@ body {
 
 .brand-card {
   display: block;
-  max-width: 360px;
+  max-width: none;
+  width: 100%;
   margin-bottom: 24px;
 }
 
@@ -718,4 +719,30 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* 他のカードと統一した美しいシャドウ */
   margin-bottom: 30px;
   overflow: hidden;
+}
+
+/* 左側に移したParticipation Policy（白い見出しが読めるように背景をクラブカラーに） */
+.left-content .policy-section {
+  background-color: var(--bg-main);
+}
+
+/* カレンダー下のチラシ */
+.flyer-list {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.flyer-item {
+  display: block;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+}
+
+.flyer-item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
