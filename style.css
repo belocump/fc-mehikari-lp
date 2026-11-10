@@ -746,3 +746,110 @@ body {
   width: 100%;
   height: auto;
 }
+
+/* LINE公式アカウントでの申込案内（QRコード付き） */
+.line-apply {
+  margin-top: 24px;
+  padding: 24px 22px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  color: var(--text-dark);
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.14);
+  border-top: 6px solid #06c755;
+}
+
+.line-apply__label {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background-color: #e8f9ef;
+  color: #05a447;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.line-apply__title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.line-apply__title i {
+  color: #06c755;
+}
+
+.line-apply__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.line-apply__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.line-apply__qr {
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+}
+
+.line-apply__side {
+  max-width: 220px;
+  text-align: left;
+}
+
+.line-apply__hint {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.line-apply__btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 25px;
+  background-color: #06c755;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.line-apply__btn:hover {
+  background-color: #05a447;
+}
+
+.line-apply__other {
+  padding-top: 14px;
+  border-top: 1px dashed var(--border-light);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.line-apply__other a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .line-apply__body {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .line-apply__side {
+    text-align: center;
+  }
+}
