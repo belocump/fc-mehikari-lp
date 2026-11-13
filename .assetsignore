@@ -1,0 +1,22 @@
+# 公開しないファイル（wrangler deploy のときに除外する）
+# ※日本語のフォルダ名は文字の保存形式の違いで一致しないことがあるので、英数字のパターンで書く
+
+# Git・設定・説明ファイル
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+README.md
+.claude
+.wrangler
+node_modules
+.DS_Store
+
+# 非公開の作業フォルダ（Project_富岡・Project_コーディネーター講習 など。企画書・補助金資料・下書き）
+# 作業フォルダから直接公開しても出ないようにする
+events/*/Project_*
+
+# 使っていない元動画・ショートカット類
+*.MOV
+*.mov
+*エイリアス*

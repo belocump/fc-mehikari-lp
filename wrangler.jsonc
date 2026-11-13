@@ -1,0 +1,11 @@
+// Cloudflare Workers で公開するための設定
+// GitHub の main に push すると、Cloudflare が自動で npx wrangler deploy を実行して公開する
+// 公開しないファイルは .assetsignore に書く（非公開の作業フォルダなど）
+// ドメイン（walking-football.fc-mehikari.org）は Cloudflare のダッシュボード側で設定している
+{
+  "name": "fc-mehikari-lp",
+  "compatibility_date": "2026-11-09",
+  "assets": {
+    "directory": "./"
+  }
+}
