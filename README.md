@@ -25,3 +25,11 @@ FCメヒカリ（一般社団法人ふくしま健康デザイン ウォーキ�
 | イベント | パス | 元ネタ |
 |---|---|---|
 | 避難者被災者心の復興ウォーキングフットボールin富岡（仮称） | `events/tomioka/` | `DesignForWell-being` リポジトリ `.company/marketing/content-plan/LP-富岡イベント.html`（Hallmarkスキルで制作） |
+
+## 公開（デプロイ）
+
+- GitHub の `main` に push すると、Cloudflare が自動で `npx wrangler deploy` を実行して公開する（設定は `wrangler.jsonc`）
+- 公開しないファイルは `.assetsignore` に書く。非公開の作業フォルダ（`events/*/Project_*`）や README・Git の中身は公開されない
+  - 日本語のフォルダ名は文字の保存形式が違うと一致しないことがあるので、除外パターンは英数字で書く
+- ドメイン `walking-football.fc-mehikari.org` は Cloudflare のダッシュボード側で設定している
+- 「Event Schedule」の日程は `https://events.fc-mehikari.org/embed/mehikari/` を iframe で表示している。日程の更新はイベントサイト側（スプレッドシート）で行う
