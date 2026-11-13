@@ -303,13 +303,23 @@
           <h3 class="right-section-title">Event Schedule</h3>
 
           <div class="event-calendar" style="margin-bottom: 20px">
+            <!-- ウォーキングフットボールの日程（events.fc-mehikari.org の埋め込みページ。日程はそちらのスプレッドシートで更新） -->
             <iframe
-              src="https://calendar.google.com/calendar/embed?src=c_2ea3d80f7ad87580e1fe3a9e4554acf605a0f0a7b8506bb6bb8565ce81607ffc%40group.calendar.google.com&ctz=Asia%2FTokyo&mode=AGENDA"
-              title="FCメヒカリ イベントカレンダー"
+              id="fcm-wf-events"
+              src="https://events.fc-mehikari.org/embed/walking-football/"
+              title="ウォーキングフットボール イベント日程"
               loading="lazy"
-              scrolling="no"
-              style="width: 100%; height: 600px; border: 0; border-radius: 8px; background: #fff"
+              style="width: 100%; height: 800px; border: 0; border-radius: 8px; background: #fff"
             ></iframe>
+            <script>
+              // 埋め込みページから届く高さに合わせて、iframe の高さを自動で変える
+              window.addEventListener("message", function (e) {
+                if (e.origin !== "https://events.fc-mehikari.org") return;
+                if (e.data && e.data.type === "fcm-embed-height") {
+                  document.getElementById("fcm-wf-events").style.height = e.data.height + "px";
+                }
+              });
+            </script>
           </div>
 
           <div class="flyer-list">
